@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/siriwatknp/js-lib"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "siriwatknp <siriwatkunaporn@gmail.com>",
   "license": "MIT",
   "scripts": {
