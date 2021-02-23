@@ -1,0 +1,27 @@
+{
+  "name": "@siriwatknp/js-lib-practice",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siriwatknp/js-lib"
+  },
+  "author": "siriwatknp <siriwatkunaporn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:esm": "babel -d dist/esm/ src/ --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "build:cjs": "babel --delete-dir-on-start --env-name cjs -d dist/ src/ --ignore 'src/**/*.spec.js','src/**/*.test.js'"
+  },
+  "dependencies": {
+    "lodash": "4.15.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.13.0",
+    "@babel/core": "7.13.1",
+    "@babel/preset-env": "7.13.5",
+    "jest": "26.6.3"
+  }
+}
