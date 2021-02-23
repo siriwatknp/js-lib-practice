@@ -10,3 +10,5 @@ export const asyncSayHello = async () => {
 
 export const getA = (a) => get(a, 'a')
 
+export const CONSTANT = 1
+
