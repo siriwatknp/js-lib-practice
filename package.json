@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "build": "yarn build:cjs && yarn build:esm",
-    "build:esm": "babel -d dist/esm/ src/ --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "build:esm": "babel --env-name esm -d dist/esm/ src/ --ignore 'src/**/*.spec.js','src/**/*.test.js'",
     "build:cjs": "babel --delete-dir-on-start --env-name cjs -d dist/ src/ --ignore 'src/**/*.spec.js','src/**/*.test.js'",
     "semantic-release": "semantic-release"
   },

@@ -3,14 +3,26 @@ module.exports = {
     [
       '@babel/env',
       {
-        modules: false,
         targets: {
-          node: 10
+          node: 12
         }
-      },
+      }
     ],
   ],
   env: {
+    esm: {
+      presets: [
+        [
+          '@babel/env',
+          {
+            modules: false,
+            targets: {
+              node: 10,
+            },
+          },
+        ],
+      ],
+    },
     cjs: {
       presets: [
         [
